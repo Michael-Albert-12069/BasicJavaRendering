@@ -1,4 +1,4 @@
-# BasicJavaRendering
+# Basic Java Rendering
 A simple Swing-Based Rendering 'Engine' written in Java
 
 ## Uses
