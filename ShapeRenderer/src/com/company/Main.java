@@ -1,7 +1,11 @@
 package com.company;
 
 import com.company.RenderEngine.D2.Point2D;
+import com.company.RenderEngine.D2.Square2D;
+import com.company.RenderEngine.D2.Text2D;
 import com.company.RenderEngine.D2.Triangle2D;
+
+import java.awt.*;
 
 public class Main {
 
@@ -23,11 +27,20 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         init();
         Point2D a = new Point2D(100, 200);
-        Point2D b = new Point2D(100, 300);
-        Point2D c = new Point2D(150, 250);
 
-        Triangle2D triangle = new Triangle2D(a,b,c);
-        canvas.add("triangleA", triangle);
+        Square2D tile = new Square2D(a, 50, 50);
+
+        canvas.add("tile", tile);
+
+
+
+
+
+
+
         canvas.repaint();
+        Thread.sleep(100);
+
+
     }
 }
